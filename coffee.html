@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOON CAFE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    
+
+<style>
+      @media screen  and (max-width: 1251px) and (min-width: 808px){
+        .malika{
+         display:grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+    @media screen  and (max-width: 808px){
+        .malika{
+         display:grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+    @media screen  and (max-width: 960px){
+      .movie-des{
+        padding-right: 10px;
+
+}}
+@media screen  and (max-width: 700px){
+      .nav-links{
+        display: none;
+      }
+      #myButton{
+        display: none;
+      }
+      .header-btn{
+       display: flex;
+}
+}
+    </style>
+
+
+    </style>
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <body>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/log.jpeg" class="brand-logo" alt="" /></a>
+            <ul class="nav-links">
+              <li class="nav-items"><a href="index.html">DarkRoast Cafe</a></li>
+              <li class="nav-items">
+                <a href="contact.html">about us</a>
+              </li>
+              <li class="nav-items"><a href="coffee.html">coffee</a></li>
+              <li class="nav-items"><a href="coffee.html">macha, tea & more</a></li>
+            </ul>
+            <button class="nav-items" id="myButton">
+              Feedback
+            </button>
+            <div id="myPopup" class="popup">
+              <div class="popup-content">
+                
+          
+                <h4 class="pop">What should we change in order to live up to your expectations?</h4>
+                <br>
+                <textarea style="background-color:  #5d1f04; border-radius: 10px; color: white; padding: 10px; border: none;  "  rows="7" cols="50" placeholder="Do you like us or....love DarkRoast Coffee?" required></textarea>
+                <br>
+                <br>
+                <h4 class="pop">Email</h4>
+                <small class="small">Only if you want to hear more from us.</small>
+                <br>
+                <br>
+                <input style="background-color:  #5d1f04; border: none; border-radius: 10px; color: white; padding: 10px; " class="email" type="text" name="name" placeholder="Enter your email" required/>
+                <div class="btn-block">
+                  <button id="closePopup">
+                    Submit
+                  </button>
+                  
+                </div>
+              </form>
+            </div>
+                
+              </div>
+            </div>
+          
+            <script>
+              myButton.addEventListener("click", function () {
+                myPopup.classList.add("show");
+              });
+              closePopup.addEventListener("click", function () {
+                myPopup.classList.remove("show");
+              });
+              window.addEventListener("click", function (event) {
+                if (event.target == myPopup) {
+                  myPopup.classList.remove("show");
+                }
+              });
+            </script>
+          
+          
+      <div class="right-container">
+        
+        
+        <a href="form.html" class="login-link">login</a>
+      </div>
+    </nav>
+
+    <div class="coffee">
+            <img class="ice" src="img/c4.jpeg" alt=""  >
+            <div class="c2">
+            <p>
+              iconic blends, premium flavours. <br>
+            <b>get our matcha, coffee combos to save money.</b>
+            </p>
+        </div>
+    </div>
+    
+    <div class="stars">
+        <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p class="review">  2000+ Review</p>
+    </div>
+
+
+    <section>
+
+        <div class="c">
+            <div class="cc">
+            <select name="Featured" class="card"   >
+                <option value="">Featured</option>
+                <option value="Visa">Best Selling</option>
+                <option value="Rupy">Alphabetically</option>
+                <option value="Master">Price, high to low</option>
+                <option value="Master">Price, low to high</option>
+            </select>
+            <select name="All" class="card"   >
+                <option value="">All</option>
+                <option value="Visa">Below ₹200</option>
+                <option value="Rupy">Below ₹500</option>
+                
+            </select>
+            <input type="submit" value="Apply" id="cardc" class="card">
+        </div>
+
+        <div class="malika">
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b3.jpeg" alt="">
+              <div class="p">Whipped Matcha Latte <br> ₹175</div>
+              <button>add to cart</button>
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b4.jpeg" alt="">
+              <div class="p">Iced Sreawberry Matcha <br> ₹180</div>
+            
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b5.jpeg" alt="">
+              <div class="p">Coffee, Matcha Combo <br> ₹350</div>
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b6.jpeg" alt="">
+              <div class="p">Hot Hazelnut Latte <br> ₹120</div>
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b7.jpeg" alt="">
+              <div class="p">Brownie Bubble tea <br> ₹225</div>
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b8.jpeg" alt="">
+              <div class="p">Irish Latte with Icecream     <br>  ₹288</div>
+            </div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b9.jpeg" alt="">
+              <div class="p">Iced Venti <br> ₹120</div>
+</div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b10.jpeg" alt="">
+              <div class="p">Classic Cold Coffee <br> <strong>₹100</strong> </div>
+</div>
+          </div>
+          <div class="cherry">
+            <div class="kiwi">
+              <img class="imgg" src="img/b11.jpeg" alt="">
+              <div class="p">Couple Combo with Brownie <br> ₹375</div>
+            </div>
+          </div>
+        </div>
+    </section> 
+    <footer style="background-color: #5d1f04; color: white; padding: 20px; display: flex; ">
+      <a style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;" href="contact.html">Contact
+      <!-- <div style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;">Contact </div></a> -->
+      <a style="margin: 10px;">FAQ</a>
+      <a style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;" href="index.html" >&COPY; 2023  |  DarkRoast Coffee     </a>
+      
+    </footer>
+    </body>
+    </html>

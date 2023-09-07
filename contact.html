@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOON CAFE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <nav class="navbar">
+      <a href="index.html">
+      <img  src="img/logo1.jpg" class="brand-logo" alt="" /></a>
+      <ul class="nav-links">
+        <li class="nav-items"><a href="index.html">DarkRoast Cafe</a></li>
+        <li class="nav-items">
+          <a href="#section3">about us</a>
+        </li>
+        <li class="nav-items"><a href="coffee.html">coffee</a></li>
+        <li class="nav-items"><a href="coffee.html">macha, tea & more</a></li>
+      </ul>
+	<button class="nav-items" id="myButton">
+		Feedback
+	</button>
+	<div id="myPopup" class="popup">
+		<div class="popup-content">
+			
+
+      <h4 class="pop">What should we change in order to live up to your expectations?</h4>
+      <br>
+      <textarea style="background-color:  #5d1f04; border-radius: 10px; color: white; padding: 10px; border: none;  "  rows="7" cols="50" placeholder="Do you like us or....love DarkRoast Coffee?" required></textarea>
+      <br>
+      <br>
+      <h4 class="pop">Email</h4>
+      <small class="small">Only if you want to hear more from us.</small>
+      <br>
+      <br>
+      <input style="background-color:  #5d1f04; border: none; border-radius: 10px; color: white; padding: 10px; " class="email" type="text" name="name" placeholder="Enter your email" required/>
+      <div class="btn-block">
+        <button id="closePopup">
+          Submit
+        </button>
+        
+      </div>
+    </form>
+  </div>
+			
+		</div>
+	</div>
+
+	<script>
+		myButton.addEventListener("click", function () {
+			myPopup.classList.add("show");
+		});
+		closePopup.addEventListener("click", function () {
+			myPopup.classList.remove("show");
+		});
+		window.addEventListener("click", function (event) {
+			if (event.target == myPopup) {
+				myPopup.classList.remove("show");
+			}
+		});
+	</script>
+
+      <div class="right-container">
+        
+        
+        <a href="form.html" class="login-link">login</a>
+      </div>
+    </nav>
+    <section style="background-color:#e58962be;" id="section3">
+      
+        <div class="love">
+          
+          <h4>
+            <b class="created">created with love &#x2665;</b>
+          </h4>
+       <br>
+    
+          <p>At DarkRoast Coffee, we’re passionate about providing high quality, delicious beverages. So you can enjoy every sip, slurp and spill (it happens) with the knowledge that what you’re drinking isn’t just delicious, but also thoughtfully made. We are grateful to be a part of your daily routine, and we take it seriously. We believe that drinks can be more than just drinks, but sources of joy, inspiration and creativity in a cup.</p>
+        </div>
+       
+      </section>
+    <section >
+        <div style="margin-bottom: 20px;" class="end" id="end">
+          <div class="end1">
+        <img class="cartoon" src="img/a9.png" alt="" width="300px">
+        </div>
+        <div class="end2">
+        <h1>get 10% off!</h1>
+        <br>
+        <p>
+            Stay up to date with all things from Chamberlain Coffee, and get the newsletter straight to your inbox... Psst we send secret news and recipes from Emma and you get 10% off your first order.
+        </p>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Your email goes here">
+        <button class="btn2">Subscribe</button>
+      
+      </div>
+      </div>
+    </section>
+    <footer style="background-color: #5d1f04; color: white; padding: 20px; display: flex; ">
+      <a style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;" href="contact.html">Contact
+      <!-- <div style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;">Contact </div></a> -->
+      <a style="margin: 10px;">FAQ</a>
+      <a style="margin: 10px; text-decoration: none; list-style: none; color: aliceblue;" href="index.html" >&COPY; 2023  |  DarkRoast Coffee     </a>
+      
+    </footer>
+    </body>
+    </html>
